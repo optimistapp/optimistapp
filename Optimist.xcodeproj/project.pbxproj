@@ -1,0 +1,497 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1340FBA41A7DABCB000F0282 /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1340FBA31A7DABCB000F0282 /* images.xcassets */; };
+		1340FBAC1A7DB18C000F0282 /* SunBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1340FBA71A7DB18C000F0282 /* SunBar.swift */; };
+		1340FBAD1A7DB18C000F0282 /* HexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1340FBA81A7DB18C000F0282 /* HexColor.swift */; };
+		1340FBAE1A7DB18C000F0282 /* MoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1340FBA91A7DB18C000F0282 /* MoodView.swift */; };
+		1340FBAF1A7DB18C000F0282 /* MoodButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1340FBAA1A7DB18C000F0282 /* MoodButton.swift */; };
+		1340FBB01A7DB18C000F0282 /* AcceptButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1340FBAB1A7DB18C000F0282 /* AcceptButton.swift */; };
+		1340FBB21A7DB20F000F0282 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1340FBB11A7DB20F000F0282 /* TabViewController.swift */; };
+		135566BC1A7D7EAC00DDE975 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 135566BA1A7D7EAC00DDE975 /* LaunchScreen.xib */; };
+		135566C81A7D7EAC00DDE975 /* OptimistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135566C71A7D7EAC00DDE975 /* OptimistTests.swift */; };
+		135566D21A7D7EBC00DDE975 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 135566D11A7D7EBC00DDE975 /* MapKit.framework */; };
+		135566D61A7D7ECC00DDE975 /* WYPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 135566D51A7D7ECC00DDE975 /* WYPopoverController.m */; };
+		135566DD1A7D7EFD00DDE975 /* CallOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135566DB1A7D7EFD00DDE975 /* CallOutViewController.swift */; };
+		135566DE1A7D7EFD00DDE975 /* CallOutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 135566DC1A7D7EFD00DDE975 /* CallOutViewController.xib */; };
+		135566E41A7D7F5800DDE975 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135566DF1A7D7F5800DDE975 /* AppDelegate.swift */; };
+		135566E51A7D7F5800DDE975 /* PickMapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135566E01A7D7F5800DDE975 /* PickMapController.swift */; };
+		135566E61A7D7F5800DDE975 /* DropMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135566E11A7D7F5800DDE975 /* DropMapViewController.swift */; };
+		135566E71A7D7F5800DDE975 /* beamAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135566E21A7D7F5800DDE975 /* beamAnnotation.swift */; };
+		135566E81A7D7F5800DDE975 /* beamPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135566E31A7D7F5800DDE975 /* beamPackage.swift */; };
+		135566EA1A7D7FC400DDE975 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135566E91A7D7FC400DDE975 /* FirstViewController.swift */; };
+		135566EC1A7D8D5900DDE975 /* ShareBeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135566EB1A7D8D5900DDE975 /* ShareBeamViewController.swift */; };
+		138B37321A7DBFE800BBADFC /* Tab2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138B37311A7DBFE800BBADFC /* Tab2ViewController.swift */; };
+		13CCF93B1A7DCE250051753B /* locked.png in Resources */ = {isa = PBXBuildFile; fileRef = 13CCF93A1A7DCE250051753B /* locked.png */; };
+		13CCF93D1A7DCE2B0051753B /* unlocked.png in Resources */ = {isa = PBXBuildFile; fileRef = 13CCF93C1A7DCE2B0051753B /* unlocked.png */; };
+		13E2BE2E1A7D95400096C324 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13E2BE2D1A7D95400096C324 /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		135566C21A7D7EAC00DDE975 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 135566A41A7D7EAC00DDE975 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 135566AB1A7D7EAC00DDE975;
+			remoteInfo = Optimist;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1340FBA31A7DABCB000F0282 /* images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = images.xcassets; path = ../images.xcassets; sourceTree = "<group>"; };
+		1340FBA71A7DB18C000F0282 /* SunBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SunBar.swift; sourceTree = "<group>"; };
+		1340FBA81A7DB18C000F0282 /* HexColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexColor.swift; sourceTree = "<group>"; };
+		1340FBA91A7DB18C000F0282 /* MoodView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoodView.swift; sourceTree = "<group>"; };
+		1340FBAA1A7DB18C000F0282 /* MoodButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoodButton.swift; sourceTree = "<group>"; };
+		1340FBAB1A7DB18C000F0282 /* AcceptButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcceptButton.swift; sourceTree = "<group>"; };
+		1340FBB11A7DB20F000F0282 /* TabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
+		135566AC1A7D7EAC00DDE975 /* Optimist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Optimist.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		135566B01A7D7EAC00DDE975 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		135566BB1A7D7EAC00DDE975 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		135566C11A7D7EAC00DDE975 /* OptimistTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OptimistTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		135566C61A7D7EAC00DDE975 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		135566C71A7D7EAC00DDE975 /* OptimistTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptimistTests.swift; sourceTree = "<group>"; };
+		135566D11A7D7EBC00DDE975 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		135566D31A7D7ECC00DDE975 /* Optimist-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Optimist-Bridging-Header.h"; sourceTree = "<group>"; };
+		135566D41A7D7ECC00DDE975 /* WYPopoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYPopoverController.h; sourceTree = "<group>"; };
+		135566D51A7D7ECC00DDE975 /* WYPopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYPopoverController.m; sourceTree = "<group>"; };
+		135566DB1A7D7EFD00DDE975 /* CallOutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallOutViewController.swift; sourceTree = "<group>"; };
+		135566DC1A7D7EFD00DDE975 /* CallOutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CallOutViewController.xib; sourceTree = "<group>"; };
+		135566DF1A7D7F5800DDE975 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		135566E01A7D7F5800DDE975 /* PickMapController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickMapController.swift; sourceTree = "<group>"; };
+		135566E11A7D7F5800DDE975 /* DropMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropMapViewController.swift; sourceTree = "<group>"; };
+		135566E21A7D7F5800DDE975 /* beamAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = beamAnnotation.swift; sourceTree = "<group>"; };
+		135566E31A7D7F5800DDE975 /* beamPackage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = beamPackage.swift; sourceTree = "<group>"; };
+		135566E91A7D7FC400DDE975 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		135566EB1A7D8D5900DDE975 /* ShareBeamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareBeamViewController.swift; sourceTree = "<group>"; };
+		138B37311A7DBFE800BBADFC /* Tab2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tab2ViewController.swift; sourceTree = "<group>"; };
+		13CCF93A1A7DCE250051753B /* locked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = locked.png; sourceTree = "<group>"; };
+		13CCF93C1A7DCE2B0051753B /* unlocked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unlocked.png; sourceTree = "<group>"; };
+		13E2BE2D1A7D95400096C324 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		135566A91A7D7EAC00DDE975 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				135566D21A7D7EBC00DDE975 /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		135566BE1A7D7EAC00DDE975 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		135566A31A7D7EAC00DDE975 = {
+			isa = PBXGroup;
+			children = (
+				135566D11A7D7EBC00DDE975 /* MapKit.framework */,
+				135566AE1A7D7EAC00DDE975 /* Optimist */,
+				135566C41A7D7EAC00DDE975 /* OptimistTests */,
+				135566AD1A7D7EAC00DDE975 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		135566AD1A7D7EAC00DDE975 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				135566AC1A7D7EAC00DDE975 /* Optimist.app */,
+				135566C11A7D7EAC00DDE975 /* OptimistTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		135566AE1A7D7EAC00DDE975 /* Optimist */ = {
+			isa = PBXGroup;
+			children = (
+				1340FBA71A7DB18C000F0282 /* SunBar.swift */,
+				1340FBA81A7DB18C000F0282 /* HexColor.swift */,
+				1340FBA91A7DB18C000F0282 /* MoodView.swift */,
+				1340FBAA1A7DB18C000F0282 /* MoodButton.swift */,
+				1340FBAB1A7DB18C000F0282 /* AcceptButton.swift */,
+				135566DF1A7D7F5800DDE975 /* AppDelegate.swift */,
+				135566E01A7D7F5800DDE975 /* PickMapController.swift */,
+				135566E11A7D7F5800DDE975 /* DropMapViewController.swift */,
+				135566E21A7D7F5800DDE975 /* beamAnnotation.swift */,
+				135566E31A7D7F5800DDE975 /* beamPackage.swift */,
+				135566D41A7D7ECC00DDE975 /* WYPopoverController.h */,
+				135566D51A7D7ECC00DDE975 /* WYPopoverController.m */,
+				135566DB1A7D7EFD00DDE975 /* CallOutViewController.swift */,
+				135566DC1A7D7EFD00DDE975 /* CallOutViewController.xib */,
+				1340FBA31A7DABCB000F0282 /* images.xcassets */,
+				135566EB1A7D8D5900DDE975 /* ShareBeamViewController.swift */,
+				13E2BE2D1A7D95400096C324 /* Main.storyboard */,
+				138B37311A7DBFE800BBADFC /* Tab2ViewController.swift */,
+				1340FBB11A7DB20F000F0282 /* TabViewController.swift */,
+				135566E91A7D7FC400DDE975 /* FirstViewController.swift */,
+				135566BA1A7D7EAC00DDE975 /* LaunchScreen.xib */,
+				135566AF1A7D7EAC00DDE975 /* Supporting Files */,
+				135566D31A7D7ECC00DDE975 /* Optimist-Bridging-Header.h */,
+			);
+			path = Optimist;
+			sourceTree = "<group>";
+		};
+		135566AF1A7D7EAC00DDE975 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				13CCF93A1A7DCE250051753B /* locked.png */,
+				13CCF93C1A7DCE2B0051753B /* unlocked.png */,
+				135566B01A7D7EAC00DDE975 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		135566C41A7D7EAC00DDE975 /* OptimistTests */ = {
+			isa = PBXGroup;
+			children = (
+				135566C71A7D7EAC00DDE975 /* OptimistTests.swift */,
+				135566C51A7D7EAC00DDE975 /* Supporting Files */,
+			);
+			path = OptimistTests;
+			sourceTree = "<group>";
+		};
+		135566C51A7D7EAC00DDE975 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				135566C61A7D7EAC00DDE975 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		135566AB1A7D7EAC00DDE975 /* Optimist */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 135566CB1A7D7EAC00DDE975 /* Build configuration list for PBXNativeTarget "Optimist" */;
+			buildPhases = (
+				135566A81A7D7EAC00DDE975 /* Sources */,
+				135566A91A7D7EAC00DDE975 /* Frameworks */,
+				135566AA1A7D7EAC00DDE975 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Optimist;
+			productName = Optimist;
+			productReference = 135566AC1A7D7EAC00DDE975 /* Optimist.app */;
+			productType = "com.apple.product-type.application";
+		};
+		135566C01A7D7EAC00DDE975 /* OptimistTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 135566CE1A7D7EAC00DDE975 /* Build configuration list for PBXNativeTarget "OptimistTests" */;
+			buildPhases = (
+				135566BD1A7D7EAC00DDE975 /* Sources */,
+				135566BE1A7D7EAC00DDE975 /* Frameworks */,
+				135566BF1A7D7EAC00DDE975 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				135566C31A7D7EAC00DDE975 /* PBXTargetDependency */,
+			);
+			name = OptimistTests;
+			productName = OptimistTests;
+			productReference = 135566C11A7D7EAC00DDE975 /* OptimistTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		135566A41A7D7EAC00DDE975 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Optimist;
+				TargetAttributes = {
+					135566AB1A7D7EAC00DDE975 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					135566C01A7D7EAC00DDE975 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 135566AB1A7D7EAC00DDE975;
+					};
+				};
+			};
+			buildConfigurationList = 135566A71A7D7EAC00DDE975 /* Build configuration list for PBXProject "Optimist" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 135566A31A7D7EAC00DDE975;
+			productRefGroup = 135566AD1A7D7EAC00DDE975 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				135566AB1A7D7EAC00DDE975 /* Optimist */,
+				135566C01A7D7EAC00DDE975 /* OptimistTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		135566AA1A7D7EAC00DDE975 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				135566BC1A7D7EAC00DDE975 /* LaunchScreen.xib in Resources */,
+				135566DE1A7D7EFD00DDE975 /* CallOutViewController.xib in Resources */,
+				13E2BE2E1A7D95400096C324 /* Main.storyboard in Resources */,
+				13CCF93D1A7DCE2B0051753B /* unlocked.png in Resources */,
+				1340FBA41A7DABCB000F0282 /* images.xcassets in Resources */,
+				13CCF93B1A7DCE250051753B /* locked.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		135566BF1A7D7EAC00DDE975 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		135566A81A7D7EAC00DDE975 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				135566EA1A7D7FC400DDE975 /* FirstViewController.swift in Sources */,
+				135566EC1A7D8D5900DDE975 /* ShareBeamViewController.swift in Sources */,
+				1340FBAD1A7DB18C000F0282 /* HexColor.swift in Sources */,
+				1340FBB21A7DB20F000F0282 /* TabViewController.swift in Sources */,
+				135566E41A7D7F5800DDE975 /* AppDelegate.swift in Sources */,
+				135566D61A7D7ECC00DDE975 /* WYPopoverController.m in Sources */,
+				135566E61A7D7F5800DDE975 /* DropMapViewController.swift in Sources */,
+				135566DD1A7D7EFD00DDE975 /* CallOutViewController.swift in Sources */,
+				1340FBAE1A7DB18C000F0282 /* MoodView.swift in Sources */,
+				1340FBAF1A7DB18C000F0282 /* MoodButton.swift in Sources */,
+				1340FBAC1A7DB18C000F0282 /* SunBar.swift in Sources */,
+				138B37321A7DBFE800BBADFC /* Tab2ViewController.swift in Sources */,
+				135566E71A7D7F5800DDE975 /* beamAnnotation.swift in Sources */,
+				135566E81A7D7F5800DDE975 /* beamPackage.swift in Sources */,
+				135566E51A7D7F5800DDE975 /* PickMapController.swift in Sources */,
+				1340FBB01A7DB18C000F0282 /* AcceptButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		135566BD1A7D7EAC00DDE975 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				135566C81A7D7EAC00DDE975 /* OptimistTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		135566C31A7D7EAC00DDE975 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 135566AB1A7D7EAC00DDE975 /* Optimist */;
+			targetProxy = 135566C21A7D7EAC00DDE975 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		135566BA1A7D7EAC00DDE975 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				135566BB1A7D7EAC00DDE975 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		135566C91A7D7EAC00DDE975 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		135566CA1A7D7EAC00DDE975 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		135566CC1A7D7EAC00DDE975 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = Optimist/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Optimist/Optimist-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		135566CD1A7D7EAC00DDE975 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = Optimist/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Optimist/Optimist-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		135566CF1A7D7EAC00DDE975 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = OptimistTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Optimist.app/Optimist";
+			};
+			name = Debug;
+		};
+		135566D01A7D7EAC00DDE975 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = OptimistTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Optimist.app/Optimist";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		135566A71A7D7EAC00DDE975 /* Build configuration list for PBXProject "Optimist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				135566C91A7D7EAC00DDE975 /* Debug */,
+				135566CA1A7D7EAC00DDE975 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		135566CB1A7D7EAC00DDE975 /* Build configuration list for PBXNativeTarget "Optimist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				135566CC1A7D7EAC00DDE975 /* Debug */,
+				135566CD1A7D7EAC00DDE975 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		135566CE1A7D7EAC00DDE975 /* Build configuration list for PBXNativeTarget "OptimistTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				135566CF1A7D7EAC00DDE975 /* Debug */,
+				135566D01A7D7EAC00DDE975 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 135566A41A7D7EAC00DDE975 /* Project object */;
+}
