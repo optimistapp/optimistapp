@@ -2,9 +2,9 @@ import Foundation
 
 class beamPackage {
     
-    let lat:Double
-    let lon:Double
-    let msg:String
+    let lat:Double  //lattitude
+    let lon:Double  //longtitude
+    let msg:String  //message
     
     init(beamMsg:String, LocLat:Double, LocLon:Double) {
         msg = beamMsg

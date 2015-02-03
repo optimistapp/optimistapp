@@ -18,13 +18,9 @@ class TabViewController: UIViewController {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(netHex:0xfffdd7)
         self.navigationController!.navigationBar.tintColor = UIColor(netHex:0xfffdd7)
-        // Do any additional setup after loading the view, typically from a nib.
         
         let moodView = MoodView(frame: CGRect(x: 0, y: SUN_BAR_HEIGHT + TEXT_AREA_HEIGHT - 20, width: self.view.frame.width, height: self.view.frame.height - SUN_BAR_HEIGHT - TEXT_AREA_HEIGHT))
         self.view.addSubview(moodView)
-        
-        //let sunBar = SunBar(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: SUN_BAR_HEIGHT))
-        //self.view.addSubview(sunBar)
         
         let friendlyText = UILabel(frame: CGRectMake(16, 100, 400, 21))
         friendlyText.text = "this is for someone who feels..."
@@ -53,14 +49,5 @@ class TabViewController: UIViewController {
     @IBAction func Cancel(sender: AnyObject) {
         self.navigationController?.popViewControllerAnimated(true)
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

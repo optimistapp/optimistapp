@@ -3,7 +3,7 @@
 //  optimismMap
 //
 //  Created by Johnson Zhou on 1/31/15.
-//  Copyright (c) 2015 Johnson Zhou. All rights reserved.
+//  Copyright (c) 2015 Optimist. All rights reserved.
 //
 
 import UIKit
@@ -11,31 +11,35 @@ import MapKit
 
 class DropMapViewController: UIViewController,MKMapViewDelegate,CLLocationManagerDelegate {
     
-    var thisPackage:beamPackage
-    var msgString = ""
-    var status:[Bool] = [Bool](count:20, repeatedValue:true)
+    var thisPackage:beamPackage         // the package that needs to be send
+    var msgString = ""                  //the message that needs to be send to the server
+    var status:[Bool] = [Bool](count:20, repeatedValue:true) // the array of emotions
     
     
-    
+    /*
+    No need, auto handled by the show segue
     @IBAction func goBack(sender: AnyObject) {
       self.navigationController?.popViewControllerAnimated(true)
     }
+    */
+    
     required init(coder aDecoder: NSCoder) {
         
         self.locationManager = CLLocationManager()
-        thisPackage = beamPackage(beamMsg: msgString, LocLat: 0, LocLon: 0)
+        thisPackage = beamPackage(beamMsg: msgString, LocLat: 0, LocLon: 0) // just the init, swift things
         super.init(coder: aDecoder)
     }
     
-    var locationManager:CLLocationManager
+    var locationManager:CLLocationManager           //the location controller handling location
     
     @IBOutlet weak var MainMap: MKMapView!
     
-    @IBAction func DropBeam(sender: AnyObject) {
+    @IBAction func DropBeam(sender: AnyObject) {        //triggered by drop button
         
-        let myDelegate = AppDelegate()
         var currentLocation = self.MainMap.userLocation.coordinate
-        thisPackage = beamPackage(beamMsg: msgString, LocLat: currentLocation.latitude, LocLon: currentLocation.longitude)
+        thisPackage = beamPackage(beamMsg: msgString, LocLat: currentLocation.latitude, LocLon: currentLocation.longitude) //preparing package to drop
+        
+        //networking begin
         let dicKey = "key="
         let dicUser = "&user="
         let dicLat = "&lat="
@@ -71,18 +75,19 @@ class DropMapViewController: UIViewController,MKMapViewDelegate,CLLocationManage
         } else {
             NSLog("nope")
         }
+        //networking end
         //self.navigationController?.popViewControllerAnimated(true)
-        self.performSegueWithIdentifier("weirdPush", sender: self)
+        self.performSegueWithIdentifier("weirdPush", sender: self) //segue back, placeholder, need to change
     }
     
-    func mapView(mapView: MKMapView!, didUpdateUserLocation userLocation: MKUserLocation!) {
+    func mapView(mapView: MKMapView!, didUpdateUserLocation userLocation: MKUserLocation!) {        //zoom and center the map
         var coord = self.MainMap.userLocation.location.coordinate
         var region = MKCoordinateRegionMakeWithDistance(coord, 200, 200)
         self.MainMap.setRegion(region, animated: true)
     }
     
     
-    func mapView(mapView: MKMapView!, rendererForOverlay overlay: MKOverlay!) -> MKOverlayRenderer! {
+    func mapView(mapView: MKMapView!, rendererForOverlay overlay: MKOverlay!) -> MKOverlayRenderer! {       //just the render for custom tile
         if (overlay.isKindOfClass(MKTileOverlay)) {
             return MKTileOverlayRenderer(overlay: overlay)
         } else
@@ -93,16 +98,19 @@ class DropMapViewController: UIViewController,MKMapViewDelegate,CLLocationManage
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //getting data from other view controllers, placeholder, need update
         var prefs = NSUserDefaults.standardUserDefaults()
         
-        //var status : [Bool] = [Bool]()
         if let testArray : AnyObject? = prefs.objectForKey("theBool") {
             status = testArray! as [Bool]
         }
-        
-        if let firstNameIsNotNill = prefs.objectForKey("BeamText") as? String {
+
+        if let randomstuff = prefs.objectForKey("BeamText") as? String {
             msgString = prefs.objectForKey("BeamText") as String
         }
+        
+        
         self.locationManager.requestWhenInUseAuthorization()
         self.MainMap.delegate = self
         self.MainMap.setUserTrackingMode(MKUserTrackingMode.Follow, animated: true)

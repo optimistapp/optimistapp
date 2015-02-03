@@ -3,7 +3,7 @@
 //  Optimist
 //
 //  Created by Jacob Johannesen on 1/30/15.
-//  Copyright (c) 2015 MonsterCreate. All rights reserved.
+//  Copyright (c) 2015 Optimist. All rights reserved.
 //
 
 import Foundation

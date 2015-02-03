@@ -3,7 +3,7 @@
 //  optimismMap
 //
 //  Created by Johnson Zhou on 1/31/15.
-//  Copyright (c) 2015 Johnson Zhou. All rights reserved.
+//  Copyright (c) 2015 Optimist. All rights reserved.
 //
 
 import Foundation
@@ -20,6 +20,7 @@ class beamAnnotation:NSObject,MKAnnotation {
         self.msg = msg
     }
     
+    //annotation for unlocked item
     func annotationViewUnlocked() -> MKAnnotationView{
         var annotationView = MKAnnotationView(annotation: self, reuseIdentifier: "AnnoUnlock")
         annotationView.enabled = true
@@ -29,6 +30,7 @@ class beamAnnotation:NSObject,MKAnnotation {
         return annotationView
     }
     
+    //annotation for locked item
     func annotationViewLocked() -> MKAnnotationView{
         var annotationView = MKAnnotationView(annotation: self, reuseIdentifier: "AnnoLock")
         annotationView.enabled = true

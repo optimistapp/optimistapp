@@ -3,10 +3,13 @@
 //  optimismMap
 //
 //  Created by Johnson Zhou on 1/31/15.
-//  Copyright (c) 2015 Johnson Zhou. All rights reserved.
+//  Copyright (c) 2015 Optmist. All rights reserved.
 //
 
 import UIKit
+
+
+//if you don't understand this, you really need to change your major
 
 class CallOutViewController: UIViewController,UITextViewDelegate {
 
@@ -15,13 +18,10 @@ class CallOutViewController: UIViewController,UITextViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        textView.text = msg
-        // Do any additional setup after loading the view.
-    }
+        textView.text = msg    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     required init(coder aDecoder: NSCoder) {
@@ -35,15 +35,5 @@ class CallOutViewController: UIViewController,UITextViewDelegate {
     convenience override init() {
         self.init(nibName: nil, bundle: nil)
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

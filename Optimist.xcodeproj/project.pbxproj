@@ -14,7 +14,6 @@
 		1340FBAF1A7DB18C000F0282 /* MoodButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1340FBAA1A7DB18C000F0282 /* MoodButton.swift */; };
 		1340FBB01A7DB18C000F0282 /* AcceptButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1340FBAB1A7DB18C000F0282 /* AcceptButton.swift */; };
 		1340FBB21A7DB20F000F0282 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1340FBB11A7DB20F000F0282 /* TabViewController.swift */; };
-		135566BC1A7D7EAC00DDE975 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 135566BA1A7D7EAC00DDE975 /* LaunchScreen.xib */; };
 		135566C81A7D7EAC00DDE975 /* OptimistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135566C71A7D7EAC00DDE975 /* OptimistTests.swift */; };
 		135566D21A7D7EBC00DDE975 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 135566D11A7D7EBC00DDE975 /* MapKit.framework */; };
 		135566D61A7D7ECC00DDE975 /* WYPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 135566D51A7D7ECC00DDE975 /* WYPopoverController.m */; };
@@ -53,7 +52,6 @@
 		1340FBB11A7DB20F000F0282 /* TabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		135566AC1A7D7EAC00DDE975 /* Optimist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Optimist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		135566B01A7D7EAC00DDE975 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		135566BB1A7D7EAC00DDE975 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		135566C11A7D7EAC00DDE975 /* OptimistTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OptimistTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		135566C61A7D7EAC00DDE975 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		135566C71A7D7EAC00DDE975 /* OptimistTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptimistTests.swift; sourceTree = "<group>"; };
@@ -137,7 +135,6 @@
 				138B37311A7DBFE800BBADFC /* Tab2ViewController.swift */,
 				1340FBB11A7DB20F000F0282 /* TabViewController.swift */,
 				135566E91A7D7FC400DDE975 /* FirstViewController.swift */,
-				135566BA1A7D7EAC00DDE975 /* LaunchScreen.xib */,
 				135566AF1A7D7EAC00DDE975 /* Supporting Files */,
 				135566D31A7D7ECC00DDE975 /* Optimist-Bridging-Header.h */,
 			);
@@ -220,6 +217,7 @@
 				TargetAttributes = {
 					135566AB1A7D7EAC00DDE975 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = E733BFW6U8;
 					};
 					135566C01A7D7EAC00DDE975 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -251,7 +249,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				135566BC1A7D7EAC00DDE975 /* LaunchScreen.xib in Resources */,
 				135566DE1A7D7EFD00DDE975 /* CallOutViewController.xib in Resources */,
 				13E2BE2E1A7D95400096C324 /* Main.storyboard in Resources */,
 				13CCF93D1A7DCE2B0051753B /* unlocked.png in Resources */,
@@ -310,17 +307,6 @@
 			targetProxy = 135566C21A7D7EAC00DDE975 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		135566BA1A7D7EAC00DDE975 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				135566BB1A7D7EAC00DDE975 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		135566C91A7D7EAC00DDE975 /* Debug */ = {
@@ -406,9 +392,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Optimist/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Optimist/Optimist-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -420,9 +409,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Optimist/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Optimist/Optimist-Bridging-Header.h";
 			};
 			name = Release;
