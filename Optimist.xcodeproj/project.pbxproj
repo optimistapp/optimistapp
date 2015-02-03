@@ -115,6 +115,7 @@
 		135566AE1A7D7EAC00DDE975 /* Optimist */ = {
 			isa = PBXGroup;
 			children = (
+				139ACC7F1A80AA6A00C98B47 /* thirdparty */,
 				1340FBA71A7DB18C000F0282 /* SunBar.swift */,
 				1340FBA81A7DB18C000F0282 /* HexColor.swift */,
 				1340FBA91A7DB18C000F0282 /* MoodView.swift */,
@@ -125,8 +126,6 @@
 				135566E11A7D7F5800DDE975 /* DropMapViewController.swift */,
 				135566E21A7D7F5800DDE975 /* beamAnnotation.swift */,
 				135566E31A7D7F5800DDE975 /* beamPackage.swift */,
-				135566D41A7D7ECC00DDE975 /* WYPopoverController.h */,
-				135566D51A7D7ECC00DDE975 /* WYPopoverController.m */,
 				135566DB1A7D7EFD00DDE975 /* CallOutViewController.swift */,
 				135566DC1A7D7EFD00DDE975 /* CallOutViewController.xib */,
 				1340FBA31A7DABCB000F0282 /* images.xcassets */,
@@ -166,6 +165,15 @@
 				135566C61A7D7EAC00DDE975 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		139ACC7F1A80AA6A00C98B47 /* thirdparty */ = {
+			isa = PBXGroup;
+			children = (
+				135566D41A7D7ECC00DDE975 /* WYPopoverController.h */,
+				135566D51A7D7ECC00DDE975 /* WYPopoverController.m */,
+			);
+			name = thirdparty;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
