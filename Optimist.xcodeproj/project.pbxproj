@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		132011641A80AB2400C08918 /* WYPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 132011631A80AB2400C08918 /* WYPopoverController.m */; };
 		1340FBA41A7DABCB000F0282 /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1340FBA31A7DABCB000F0282 /* images.xcassets */; };
 		1340FBAC1A7DB18C000F0282 /* SunBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1340FBA71A7DB18C000F0282 /* SunBar.swift */; };
 		1340FBAD1A7DB18C000F0282 /* HexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1340FBA81A7DB18C000F0282 /* HexColor.swift */; };
@@ -16,7 +17,6 @@
 		1340FBB21A7DB20F000F0282 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1340FBB11A7DB20F000F0282 /* TabViewController.swift */; };
 		135566C81A7D7EAC00DDE975 /* OptimistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135566C71A7D7EAC00DDE975 /* OptimistTests.swift */; };
 		135566D21A7D7EBC00DDE975 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 135566D11A7D7EBC00DDE975 /* MapKit.framework */; };
-		135566D61A7D7ECC00DDE975 /* WYPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 135566D51A7D7ECC00DDE975 /* WYPopoverController.m */; };
 		135566DD1A7D7EFD00DDE975 /* CallOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135566DB1A7D7EFD00DDE975 /* CallOutViewController.swift */; };
 		135566DE1A7D7EFD00DDE975 /* CallOutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 135566DC1A7D7EFD00DDE975 /* CallOutViewController.xib */; };
 		135566E41A7D7F5800DDE975 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135566DF1A7D7F5800DDE975 /* AppDelegate.swift */; };
@@ -43,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		132011621A80AB2400C08918 /* WYPopoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WYPopoverController.h; path = thirdparty/WYPopoverController.h; sourceTree = "<group>"; };
+		132011631A80AB2400C08918 /* WYPopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WYPopoverController.m; path = thirdparty/WYPopoverController.m; sourceTree = "<group>"; };
 		1340FBA31A7DABCB000F0282 /* images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = images.xcassets; path = ../images.xcassets; sourceTree = "<group>"; };
 		1340FBA71A7DB18C000F0282 /* SunBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SunBar.swift; sourceTree = "<group>"; };
 		1340FBA81A7DB18C000F0282 /* HexColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexColor.swift; sourceTree = "<group>"; };
@@ -57,8 +59,6 @@
 		135566C71A7D7EAC00DDE975 /* OptimistTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptimistTests.swift; sourceTree = "<group>"; };
 		135566D11A7D7EBC00DDE975 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		135566D31A7D7ECC00DDE975 /* Optimist-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Optimist-Bridging-Header.h"; sourceTree = "<group>"; };
-		135566D41A7D7ECC00DDE975 /* WYPopoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYPopoverController.h; sourceTree = "<group>"; };
-		135566D51A7D7ECC00DDE975 /* WYPopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYPopoverController.m; sourceTree = "<group>"; };
 		135566DB1A7D7EFD00DDE975 /* CallOutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallOutViewController.swift; sourceTree = "<group>"; };
 		135566DC1A7D7EFD00DDE975 /* CallOutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CallOutViewController.xib; sourceTree = "<group>"; };
 		135566DF1A7D7F5800DDE975 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -170,8 +170,8 @@
 		139ACC7F1A80AA6A00C98B47 /* thirdparty */ = {
 			isa = PBXGroup;
 			children = (
-				135566D41A7D7ECC00DDE975 /* WYPopoverController.h */,
-				135566D51A7D7ECC00DDE975 /* WYPopoverController.m */,
+				132011621A80AB2400C08918 /* WYPopoverController.h */,
+				132011631A80AB2400C08918 /* WYPopoverController.m */,
 			);
 			name = thirdparty;
 			sourceTree = "<group>";
@@ -284,7 +284,6 @@
 				1340FBAD1A7DB18C000F0282 /* HexColor.swift in Sources */,
 				1340FBB21A7DB20F000F0282 /* TabViewController.swift in Sources */,
 				135566E41A7D7F5800DDE975 /* AppDelegate.swift in Sources */,
-				135566D61A7D7ECC00DDE975 /* WYPopoverController.m in Sources */,
 				135566E61A7D7F5800DDE975 /* DropMapViewController.swift in Sources */,
 				135566DD1A7D7EFD00DDE975 /* CallOutViewController.swift in Sources */,
 				1340FBAE1A7DB18C000F0282 /* MoodView.swift in Sources */,
@@ -295,6 +294,7 @@
 				135566E81A7D7F5800DDE975 /* beamPackage.swift in Sources */,
 				135566E51A7D7F5800DDE975 /* PickMapController.swift in Sources */,
 				1340FBB01A7DB18C000F0282 /* AcceptButton.swift in Sources */,
+				132011641A80AB2400C08918 /* WYPopoverController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
