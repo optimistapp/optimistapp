@@ -5,5 +5,5 @@ Todo List
 
 1. Comments
 2. TabViewController auto-layout
-3. fix place holders, like the segues
+3. fix place holders, like the segues and image assets.
 4. New scene for "About" and "Info"
