@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Optimist. All rights reserved.
 //
 
-import UIkit
+import UIKit
 import MapKit
 
 class PickMapController: UIViewController,MKMapViewDelegate,CLLocationManagerDelegate {
@@ -76,7 +76,7 @@ class PickMapController: UIViewController,MKMapViewDelegate,CLLocationManagerDel
         var defaults = NSUserDefaults.standardUserDefaults()
         var status : [Bool] = [Bool]()
         if let testArray : AnyObject? = defaults.objectForKey("theBool") {
-            status = testArray! as [Bool]
+            status = testArray! as! [Bool]
         }
         
         self.locationManger.requestWhenInUseAuthorization() //request user location, maybe change this to appdelegate?
@@ -110,9 +110,9 @@ class PickMapController: UIViewController,MKMapViewDelegate,CLLocationManagerDel
         request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "content-type")
         request.HTTPBody = requestData
         var returnData = NSURLConnection.sendSynchronousRequest(request, returningResponse: nil, error: nil)
-        NSLog(NSString(data: returnData!, encoding: NSUTF8StringEncoding)!)
-        var returnDic = NSPropertyListSerialization.propertyListWithData(returnData!, options: 0, format: nil, error: nil) as NSDictionary
-        var NumString = returnDic["numberOfPins"] as NSString
+        NSLog(NSString(data: returnData!, encoding: NSUTF8StringEncoding) as String!)
+        var returnDic = NSPropertyListSerialization.propertyListWithData(returnData!, options: 0, format: nil, error: nil) as! NSDictionary
+        var NumString = returnDic["numberOfPins"] as! NSString
         var NumCount = NumString.integerValue
         
         // casting data received as a dictonary (which was a plist)
@@ -122,10 +122,10 @@ class PickMapController: UIViewController,MKMapViewDelegate,CLLocationManagerDel
         var lon:NSString
         if (NumCount > 0) {
         for index in 0...(NumCount-1) {
-            thisPackage = returnDic[String(index)] as NSDictionary
-            lat = thisPackage["lat"] as NSString
-            lon = thisPackage["lon"] as NSString
-            packageList.addObject(beamPackage(beamMsg: thisPackage["message"] as String, LocLat: lat.doubleValue, LocLon: lon.doubleValue))
+            thisPackage = returnDic[String(index)] as! NSDictionary
+            lat = thisPackage["lat"] as! NSString
+            lon = thisPackage["lon"] as! NSString
+            packageList.addObject(beamPackage(beamMsg: thisPackage["message"] as! String, LocLat: lat.doubleValue, LocLon: lon.doubleValue))
             
         }
         }
@@ -138,7 +138,7 @@ class PickMapController: UIViewController,MKMapViewDelegate,CLLocationManagerDel
         self.MainMap.addOverlay(overlay, level: MKOverlayLevel.AboveLabels)     //adding the tile overlay
         
         for currentItem in packageList {
-            var thisItem = currentItem as beamPackage
+            var thisItem = currentItem as! beamPackage
             self.MainMap.addAnnotation(beamAnnotation(msg: thisItem.msg, location: CLLocationCoordinate2DMake(thisItem.lat, thisItem.lon)))
         }       //getting data from the server to local arrays
         
@@ -151,7 +151,7 @@ class PickMapController: UIViewController,MKMapViewDelegate,CLLocationManagerDel
 
         if annotation.isKindOfClass(beamAnnotation) {
             
-            var thisLocation = annotation as beamAnnotation
+            var thisLocation = annotation as! beamAnnotation
             let thisLat:Double = thisLocation.coordinate.latitude
             let currentLat:Double = currentLocation.latitude
             
@@ -187,7 +187,7 @@ class PickMapController: UIViewController,MKMapViewDelegate,CLLocationManagerDel
     
        mapView.deselectAnnotation(view.annotation, animated: true)
         if (view.annotation.isKindOfClass(beamAnnotation)) {
-            var thisAnnotation = view.annotation as beamAnnotation
+            var thisAnnotation = view.annotation as! beamAnnotation
             
             var controller = CallOutViewController(nibName: "CallOutViewController", bundle: nil) //initialize the viewcontroller for callout
             controller.msg = thisAnnotation.msg                     //setting the callout message
@@ -221,7 +221,7 @@ class PickMapController: UIViewController,MKMapViewDelegate,CLLocationManagerDel
         }
         
         for currentItem2 in packageList {
-            var thisItem = currentItem2 as beamPackage
+            var thisItem = currentItem2 as! beamPackage
             self.MainMap.addAnnotation(beamAnnotation(msg: thisItem.msg, location: CLLocationCoordinate2DMake(thisItem.lat, thisItem.lon)))
         }
     }

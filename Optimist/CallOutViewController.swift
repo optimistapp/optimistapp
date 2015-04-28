@@ -32,8 +32,10 @@ class CallOutViewController: UIViewController,UITextViewDelegate {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
     
-    convenience override init() {
+     convenience init() {
         self.init(nibName: nil, bundle: nil)
     }
+    
+    
 
 }

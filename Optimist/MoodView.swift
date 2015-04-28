@@ -54,7 +54,7 @@ public class MoodView: UIView
     
     func createLine(texts: [String]) -> UIView
     {
-        let numTexts = countElements(texts);
+        let numTexts = count(texts);
         
         var totalLengthUsed: CGFloat = 0
         var endResultTotal: CGFloat = 0
@@ -99,7 +99,7 @@ public class MoodView: UIView
     
     func calculateWidth(thisText: String) -> CGFloat
     {
-        var CalculatedWidth = CGFloat(countElements(thisText)) * TEXT_SCALING_FACTOR
+        var CalculatedWidth = CGFloat(count(thisText)) * TEXT_SCALING_FACTOR
         
         if(CalculatedWidth > 120)
         {

@@ -103,11 +103,11 @@ class DropMapViewController: UIViewController,MKMapViewDelegate,CLLocationManage
         var prefs = NSUserDefaults.standardUserDefaults()
         
         if let testArray : AnyObject? = prefs.objectForKey("theBool") {
-            status = testArray! as [Bool]
+            status = testArray! as! [Bool]
         }
 
         if let randomstuff = prefs.objectForKey("BeamText") as? String {
-            msgString = prefs.objectForKey("BeamText") as String
+            msgString = prefs.objectForKey("BeamText") as! String
         }
         
         

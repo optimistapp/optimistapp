@@ -15,10 +15,10 @@ class ShareBeamViewController: UIViewController {
         
     }
     
-    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
-        self.view.endEditing(true)
-    }   //this hides the keyboard
     
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+        self.view.endEditing(true)
+    }
     @IBOutlet weak var shareBeam: UITextView!
     
     /*
